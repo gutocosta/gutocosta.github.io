@@ -9,12 +9,12 @@ Já atuei em Informática Educativa e Educacional, e Robótica Educacional.
 
 ## Formação
 
-* _Técnologo em Gestão de Tecnologia da Informação – Faculdade de Tecnologia de Guaratinguetá – Agosto de 2013/atualmente_
+* _Técnologo em Análise e Desenvolvimento de Sistemas – Faculdade de Tecnologia de Guaratinguetá – Agosto de 2016/atualmente_
 * _Técnico em Informática – Instituto Nossa Senhora do Carmo – Janeiro de 1997/Dezembro de 1999_
 
 ## Habilidades
 
-* Administração de sistemas Windows e Linux
+* Administração de Sistemas Windows e Linux
 * Administração de Rede
 * Manutenção de computadores e equipamentos
 * PfSense
@@ -37,10 +37,10 @@ Já atuei em Informática Educativa e Educacional, e Robótica Educacional.
 * Pontualidade (chego depois, e sou o último a sair)
 * Organização (minha sala de trabalho, nem eu encontro alguma coisa)
 
-Criado por: Augusto da Silva Costa
+**Criado por: Augusto da Silva Costa
 
-Informações de contato: [contato@guto.pro.br](mailto:contato@guto.pro.br "Email para contato")
+**Informações de contato: [contato@guto.pro.br](mailto:contato@guto.pro.br "Email para contato")
 
-2048R/A3041F93: 73D7 E810 CF0C 7FE3 A2E5 A0D0 D6E4 41F9 A304 1F93
+**2048R/A3041F93: 73D7 E810 CF0C 7FE3 A2E5 A0D0 D6E4 41F9 A304 1F93
 
-Atualizado em: 06 de Junho de 2016
+**Atualizado em: 31 de Maio de 2017
