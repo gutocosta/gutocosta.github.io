@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+# Augusto da Silva Costa
 
-You can use the [editor on GitHub](https://github.com/gutocosta/gutocosta.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+ ![Foto do autor do site - Augusto da Silva Costa](imagens/foto.jpg "Foto do autor do site")
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**Auxiliar Docente I em Informática - ETEC Professor Alfredo de Barros – Julho de 2013/atualmente**
 
-### Markdown
+Sou Técnico de Informática com mais de 10 anos de experiência na área educacional.<br>
+Já atuei em Informática Educativa e Educacional, e Robótica Educacional.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Formação
 
-```markdown
-Syntax highlighted code block
+* _Técnologo em Gestão de Tecnologia da Informação – Faculdade de Tecnologia de Guaratinguetá – Agosto de 2013/atualmente_
+* _Técnico em Informática – Instituto Nossa Senhora do Carmo – Janeiro de 1997/Dezembro de 1999_
 
-# Header 1
-## Header 2
-### Header 3
+## Habilidades
 
-- Bulleted
-- List
+* Administração de sistemas Windows e Linux
+* Administração de Rede
+* Manutenção de computadores e equipamentos
+* PfSense
+* Squid
+* DansGuardian
+* HTML
+* CSS
+* WordPress
+* Zabbix
+* OTRS
+* Puppet
 
-1. Numbered
-2. List
+## Passatempos
 
-**Bold** and _Italic_ and `Code` text
+* Ler livros (o último que eu li foi "The Martian" de Andy Weir)
+* Assistir séries e filmes (atualmente "The 100" da The CW e "Steve Jobs" de Danny Boyle)
 
-[Link](url) and ![Image](src)
-```
+## Pontos de Melhoria
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+* Pontualidade (chego depois, e sou o último a sair)
+* Organização (minha sala de trabalho, nem eu encontro alguma coisa)
 
-### Jekyll Themes
+Criado por: Augusto da Silva Costa
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gutocosta/gutocosta.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Informações de contato: [contato@guto.pro.br](mailto:contato@guto.pro.br "Email para contato")
 
-### Support or Contact
+2048R/A3041F93: 73D7 E810 CF0C 7FE3 A2E5 A0D0 D6E4 41F9 A304 1F93
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Atualizado em: 06 de Junho de 2016
