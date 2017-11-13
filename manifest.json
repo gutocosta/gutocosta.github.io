@@ -2,7 +2,7 @@
   "name": "Meu website no GitHub",
   "short_name": "Meu website no GitHub",
   "theme_color": "#2a0044",
-  "background_color": "#2a0044",
+  "background_color": "#2196F3",
   "display": "standalone",
   "orientation": "landscape",
   "start_url": "/index.html",
