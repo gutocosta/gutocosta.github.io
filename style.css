@@ -1,275 +1,258 @@
-body {
-  font-family: 'Raleway', sans-serif;
-  background: rgba(242, 242, 242, .6);
-  margin: 0;
-}
-
+/* soft reset do css */
 * {
-  box-sizing: border-box
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*NAVBAR*/
-.navbar {
-  background-color: #31b0d5;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+body {
+  background-image: url('./images/fundo.jpg');
+  background-size: auto 100vh; 
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+   
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.navbar a {
-  font-weight: 200;
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+ list-style: none; 
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: teal;
   color: white;
-  padding: 14px 16px;
+}
+
+a {
+  color: teal;
   text-decoration: none;
 }
 
-.anchor {
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
+a:hover {
+  text-decoration: underline;
 }
 
-/*JUMBOTRON*/
-.jumbotron {
-  height: 100vh; /*height to 100% of view height*/
-  background: #31b0d5; /*background color to blue*/
-  margin-bottom: 0; /*no bottom margin*/
-
-  display: flex;
-  flex-direction: column;
+.titulo {
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: 1s ease 500ms animacaoTitulo forwards;
 }
 
-.jumbotron-text {
-  /*TAGLINE UNDER NAME*/
-  font-weight: 400;
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-subtitle, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4em;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.site-subtitle {
+ font-style: italic;
+ font-family: 'Press Start 2P', cursive;
+ line-height: 1.8em;
+}
+
+.sobre,
+.contato,
+.portfolio {
+  padding: 2em;
+  min-height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
+
+.sobre h2,
+.contato h2,
+.portfolio h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
   font-size: 2em;
+}
+
+.sobre p {
   color: white;
-  text-align: center;
-  padding-top: 150px;
+  text-indent: 1.4em;
+  margin-bottom: 1.4em;
+  text-align: justify;
 }
 
-.jumbotron-text h1 {
-  /*YOUR NAME*/
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 3em;
-  margin-bottom: 0;
-}
-
-.jumbotron-text p {
-  margin: 0;
-}
-
-/*SOCIAL LINKS*/
-.ul-social {
-  text-align: center;
-  padding-left: 0;
-}
-
-.li-social-links {
-  display: inline-block;
-  list-style: none;
-}
-
-.social {
-  font-size: 2em;
+.sobre a {
   color: white;
-  padding: 20px;
+  text-decoration: underline;
 }
 
-/*ARROW LINK*/
-#down-arrow {
-  /*position: absolute;
-  width: 100%;*/
-  margin-top: auto;
-  text-align: center;
-  margin-bottom: 50px;
+.sobre a:hover {
+  background-color: cyan;
+  text-decoration: none;
+  color: magenta;
 }
 
-#down-arrow a {
-  color: white;
+.sobre .avatar {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  margin-left: 2em;
 }
 
-/*CONTENT*/
-.container {
-  /*sets up flexbox*/
-  display: flex;
-  flex-direction: column;
+@media (min-width: 600px) {
+  .sobre .avatar {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    float: right;
+  }
 }
 
-.row {
-  display: flex;
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
 }
 
-.white {
-  background: white;
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+  }
 }
 
-.side-content {
-  flex: 0 0 16.6%;
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
 }
 
-.main-content {
-  flex: 0 0 66.6%;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+.flip-card {
+  height: 180px;
+  perspective: 1000px;
 }
 
-.side-content-sm {
-  flex: 0 0 10%;
+.flip-card:hover .card {
+  transform: rotateY(180deg);
 }
 
-.main-content-lg {
-  flex: 0 0 80%;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-.box-shadow {
-  -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-}
-
-h2 {
-  font-weight: 200;
-  font-size: 2rem;
-  color: #31b0d5;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.content-body {
-  line-height: 1.5;
-  color: rgba(0,0,0,.75);
-}
-
-/*EDUCATION*/
 .card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-back {
   display: flex;
-  flex-direction: column;
-  background-color: white;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
-  margin-bottom: 30px;
-}
-
-.card-header {
-  padding: .75rem 1.25rem;
-  background-color: white;
-  border-bottom: 1px solid rgba(0,0,0,.075);
-  border-top-left-radius: .25rem;
-  border-top-right-radius: .25rem;
-}
-
-.card-content {
-  padding: .25rem 1.25rem;
-  flex: 1 1 auto;
-}
-
-h4 {
-  margin: 0;
-  font-weight: 400;
-  color: grey;
-}
-
-.job-title {
-  float: right;
-}
-
-/*PROJECTS*/
-.project-card {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: 5px;
-  margin-bottom: 30px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
-}
-
-.project-image {
-  flex: 1 0 auto;
-}
-
-.project-image img {
-  display: block;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.project-content {
-  flex: 1 1 auto;
-  padding: 1.25rem;
-
-  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  background-color: rgba(255, 255, 255, .7);
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
 }
 
-/*SKILLS*/
-.ul-skills {
-  text-align: center;
-  padding-left: 0;
-}
-
-.li-skills {
-  display: inline-block;
-  margin: 7px;
-  padding: 5px 10px;
-  color: white;
-  background: #31b0d5;
-  list-style: none;
-  cursor: default;
-  font-size: 1.2em;
-}
-
-/*CONTACT*/
-.blue {
-  background: #3498db;
+.portfolio figure {
   text-align: center;
 }
 
-.contact {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-  display: block;
+.img-portfolio {
+  height: 180px;
   width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: none;
-  margin-bottom: 10px;
-  background: #1d6fa5;
-  color: #fff;
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
+  object-fit: cover;
+  object-position: left bottom;
+  transition: transform 500ms;
 }
 
-.contact textarea {
-  height: 150px;
-  resize: none;
+/* .img-portfolio:hover {
+  transform: scale(1.2) rotate(-2deg);
+} */
+
+.contato .icons {
+  text-align: center;
 }
 
-.contact button {
-  display: block;
-  width: 100%;
-  background: #fff;
-  border-radius: 4px;
-  padding: 5px 10px;
-  border: none;
-  color: #3498db;
-  font-weight: 700;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  -webkit-transition: .5s ease all;
-  transition: .5s ease all;
+.contato a {
+  color: whitesmoke;
+  font-size: 4em;
+  transition: text-shadow 1s;
 }
 
-.white-text {
-  color: white;
+.contato a:active,
+.contato a:hover  {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255,255,255,.5);
 }
